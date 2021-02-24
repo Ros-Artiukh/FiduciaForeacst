@@ -1,0 +1,25 @@
+﻿@model Task<SeparatorResponse>
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Weather</h1>
+    </br>
+    <table class="table">
+        <thead>
+            <tr><th>Weather</th><th>Min Temperature</th><th>Max Temperature</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Result.Weather[0].Main</td>
+                <td>@Model.Result.Main.Temp_min</td>
+                <td>@Model.Result.Main.Temp_max</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+        <script>
+                localStorage["weather"] = @Model.Result.Weather[0].Main;
+        </script>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Forecast</h1>
+    <form onsubmit="setToLocalStorage()" action="Home/City" method="post">
+    <input type="text" name="city" required id="cityVal" />
+        <input type="submit">
+    </form>
+        <script>              
+            function setToLocalStorage() {               
+                var today = new Date().getDate();
+                var city = document.getElementById("cityVal");                
+                if (localStorage["city"] != "warned " + today
+                    && localStorage["weather"] == "Rain"
+                    && localStorage["city"] != "")
+                {
+                    alert("Today will be rain!");
+                    localStorage["city"] = "warned " + today;      
+                } else {
+                    localStorage["city"] = city.value;                  
+                }                  
+            }
+            window.onload = setToLocalStorage();
+        </script>
+</div>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EEyzfC51MJyov/5t/K36mqmZErRW8YQw0D8e9l9XH/2ch4eLn1frxdMYAMpAsvcPLyLmjKX5uXjWuZMH6Xh5QA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Oleg\\Desktop\\FiduciaForeacst-master\\Forecast\\Forecast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oleg\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
